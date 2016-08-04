@@ -1,0 +1,27 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+newmtl 0_0
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+
+newmtl Cloth-2
+Kd 0.819608 0.784314 0.784314
+Ka 0.819608 0.784314 0.784314
+Ks 0.952941 0.952941 0.952941
+Ke 0 0 0
+d 1
+illum 1
+
+newmtl Metal
+Kd 0.784314 0.784314 0.784314
+Ka 0.784314 0.784314 0.784314
+Ks 0.952941 0.952941 0.952941
+Ke 0 0 0
+d 1
+illum 1
+
