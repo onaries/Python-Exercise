@@ -44,7 +44,10 @@ for fname in images:
         cv2.imshow('img',img)
         cv2.waitKey(0)
 
+# ret = retval, mtx = camera matrix, dist = distCoeffs, rvecs, tvecs
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None)
+
+# numpy
 np.savez('B.npz', mtx=mtx, dist=dist, rvecs=rvecs, tvecs=tvecs)
 print ret, mtx, dist, rvecs, tvecs
 cv2.destroyAllWindows()

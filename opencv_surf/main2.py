@@ -22,6 +22,11 @@ def match_images(img1, img2):
     matcher = cv2.BFMatcher(cv2.NORM_L2)
 
     kp1, desc1 = detector.detectAndCompute(img1, None)
+
+    ''' kp = keypoint, kp[0].pt = #0 keypoint x axis, y axis point'''
+    # print kp1[0].pt
+    # print kp1[0].size
+    # print kp1[0].angle
     kp2, desc2 = detector.detectAndCompute(img2, None)
     # print 'img1 - %d features, img2 - %d features' % (len(kp1), len(kp2))
 
@@ -40,7 +45,6 @@ def filter_matches(kp1, kp2, matches, ratio=0.75):
     kp_pairs = zip(mkp1, mkp2)
     return kp_pairs
 
-prin
 ###############################################################################
 # Match Diplaying
 ###############################################################################
